@@ -22,7 +22,8 @@ public class Converter {
                 keyboard.nextLine();
 
                 if(choice1 == 1){
-
+                    int decimalNum = keyboard.nextInt();
+                    System.out.println("The number in a hex form is: " + Decimal.toHex(decimalNum));
                 }
                 else if(choice1 == 2){
                     int decimalNum = keyboard.nextInt();
