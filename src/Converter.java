@@ -22,10 +22,11 @@ public class Converter {
                 keyboard.nextLine();
 
                 if(choice1 == 1){
-                    
+
                 }
                 else if(choice1 == 2){
-
+                    int decimalNum = keyboard.nextInt();
+                    System.out.println("The number in a binary form is: " + Decimal.toBinary(decimalNum));
                 }
                 else
                 {
@@ -42,7 +43,8 @@ public class Converter {
                 keyboard.nextLine();
 
                 if(choice2 == 1){
-                    
+                    String hexNum = keyboard.nextLine();
+                    System.out.println("The number in a decimal form is: " + Hexadecimal.toDecimal(hexNum));
                 }
                 else if(choice2 == 2){
 
@@ -64,7 +66,7 @@ public class Converter {
                 if(choice3 == 1){
                     String binaryNum = keyboard.nextLine();
                     
-                    System.out.print("The number in a decimal form is: " + Binary.toDecimal(binaryNum));
+                    System.out.println("The number in a decimal form is: " + Binary.toDecimal(binaryNum));
                 }
                 else if(choice3 == 2){
 
