@@ -7,7 +7,7 @@ import static java.util.Map.entry;
 
 public class Decimal {
 
-    public static final Map<Integer, Character> decimalToHexMap = Map.ofEntries(
+    private static final Map<Integer, Character> decimalToHexMap = Map.ofEntries(
             entry(10, 'a'), entry(11, 'b'), entry(12, 'c'), entry(13, 'd'),
             entry(14, 'e'), entry(15, 'f'), entry(0, '0'), entry(1, '1'),
             entry(2, '2'), entry(3, '3'), entry(4, '4'), entry(5, '5'),
@@ -25,7 +25,7 @@ public class Decimal {
         }
 
         while(currentNum != 0){
-            binaryNum += (currentNum % 2)*Math.pow(10,currentInd);
+            binaryNum += (currentNum % 2) * Math.pow(10, currentInd);
             currentNum = currentNum/2;
             currentInd++;
         }
@@ -51,7 +51,7 @@ public class Decimal {
         StringBuilder sb = new StringBuilder();
 
         for(Character digit : hexNum){
-            sb.append(digit);
+            sb.append(Character.toUpperCase(digit));
         }
 
         return sb.toString();
