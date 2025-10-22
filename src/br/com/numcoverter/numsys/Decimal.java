@@ -54,7 +54,6 @@ public class Decimal {
             sb.append(Character.toUpperCase(digit));
         }
 
-        return sb.toString();
+        return sb.toString().toUpperCase();
     }
-
 }

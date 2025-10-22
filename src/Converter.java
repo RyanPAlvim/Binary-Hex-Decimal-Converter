@@ -62,10 +62,10 @@ public class Converter {
 
                     if (choice3 == 1) {
                         String binaryNum = keyboard.nextLine();
-
                         System.out.println("The number in a decimal form is: " + Binary.toDecimal(binaryNum));
                     } else if (choice3 == 2) {
-
+                        String binaryNum = keyboard.nextLine();
+                        System.out.println("The number in a hex form is: " + Binary.toHex(binaryNum));
                     } else {
                         System.out.println("This is not a valid option.");
                     }
