@@ -42,7 +42,7 @@ public class Binary {
        for(int i = binaryNum.length() - 1; i >= 0; i--){
            if(binaryNum.toCharArray()[i] != '1' || binaryNum.toCharArray()[i] != '1'){
                System.out.println("This is not a valid binary number...");
-               return 0;
+               return "0";
            }
            byte_.insert(0, binaryNum.toCharArray()[i]);
            bitsLeft--;
