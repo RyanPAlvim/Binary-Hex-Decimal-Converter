@@ -4,7 +4,7 @@ import java.util.Map;
 import static java.util.Map.entry;
 import static br.com.numcoverter.numsys.Decimal.toBinary;
 
-public class Hexadecimal {
+public class Hex {
 
     private static final Map<Character, Integer> hexIntMap = Map.ofEntries(
             entry('0', 0), entry('1', 1), entry('2', 2), entry('3', 3),

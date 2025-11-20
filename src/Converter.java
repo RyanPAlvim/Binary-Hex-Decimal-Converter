@@ -43,10 +43,10 @@ public class Converter {
 
                     if (choice2 == 1) {
                         String hexNum = keyboard.nextLine();
-                        System.out.println("The number in a decimal form is: " + Hexadecimal.toDecimal(hexNum));
+                        System.out.println("The number in a decimal form is: " + Hex.toDecimal(hexNum));
                     } else if (choice2 == 2) {
                         String hexNum = keyboard.nextLine();
-                        System.out.println("The number in a binary form is: " + Hexadecimal.toBinary(hexNum));
+                        System.out.println("The number in a binary form is: " + Hex.toBinary(hexNum));
                     } else {
                         System.out.println("This is not a valid option.");
                     }
